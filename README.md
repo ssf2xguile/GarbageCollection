@@ -9,8 +9,10 @@ Webサイトや書籍で公開されているサンプルプログラムを動�
 ## 必要要件
 
 - Pythonバージョン 3.9.11
-- Poetryバージョン 1.4.2
+- Poetryバージョン 1.6.1
 
+- \[補足\]Tensorflowを利用し、かつWindowsの場合、CUDA 11.2をインストールする。
+- \[補足\]PyTorchを利用し、かつWindowsの場合、CUDA 11.8をインストールする。
 ## インストール
 
 ```
@@ -19,11 +21,11 @@ $ cd GarbageCollection
 $ poetry install
 ```
 
-## 使い方
+## メモ(自分用)
 
-1. 使い方
-2. 使い方
-3. 使い方
+1. Pytorchのインストール手順参考
+2. [Poetry1.5.1からGPU版のPytorchのインストールが簡単になりました](https://zenn.dev/zerebom/articles/b338784c8ac76a){:target="_blank"}
+3. [poetry + python 複数バージョン + pytorch の環境構築](https://qiita.com/Simossyi/items/b099f49abfebdcdaec16){:target="_blank"}
 
 
 ## 作者
