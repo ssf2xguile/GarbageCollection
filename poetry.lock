@@ -179,19 +179,22 @@ tests-no-zope = ["cloudpickle", "hypothesis", "mypy (>=1.1.1)", "pympler", "pyte
 
 [[package]]
 name = "beautifulsoup4"
-version = "4.12.2"
+version = "4.12.3"
 description = "Screen-scraping library"
 optional = false
 python-versions = ">=3.6.0"
 files = [
-    {file = "beautifulsoup4-4.12.2-py3-none-any.whl", hash = "sha256:bd2520ca0d9d7d12694a53d44ac482d181b4ec1888909b035a3dbf40d0f57d4a"},
-    {file = "beautifulsoup4-4.12.2.tar.gz", hash = "sha256:492bbc69dca35d12daac71c4db1bfff0c876c00ef4a2ffacce226d4638eb72da"},
+    {file = "beautifulsoup4-4.12.3-py3-none-any.whl", hash = "sha256:b80878c9f40111313e55da8ba20bdba06d8fa3969fc68304167741bbf9e082ed"},
+    {file = "beautifulsoup4-4.12.3.tar.gz", hash = "sha256:74e3d1928edc070d21748185c46e3fb33490f22f52a3addee9aee0f4f7781051"},
 ]
 
 [package.dependencies]
 soupsieve = ">1.2"
 
 [package.extras]
+cchardet = ["cchardet"]
+chardet = ["chardet"]
+charset-normalizer = ["charset-normalizer"]
 html5lib = ["html5lib"]
 lxml = ["lxml"]
 
@@ -1527,6 +1530,22 @@ python-dateutil = ">=2.7"
 setuptools_scm = ">=7"
 
 [[package]]
+name = "matplotlib-venn"
+version = "0.11.10"
+description = "Functions for plotting area-proportional two- and three-way Venn diagrams in matplotlib."
+optional = false
+python-versions = "*"
+files = [
+    {file = "matplotlib-venn-0.11.10.tar.gz", hash = "sha256:90d0cfb279c5dbbdf7dfd722c0e2515a37f535e949bcad174483bc777e372e65"},
+    {file = "matplotlib_venn-0.11.10-py3-none-any.whl", hash = "sha256:85650429baff7a812b2785540979e6bf0abcc747e7fe5ffd2a972cb917a826d6"},
+]
+
+[package.dependencies]
+matplotlib = "*"
+numpy = "*"
+scipy = "*"
+
+[[package]]
 name = "mpmath"
 version = "1.3.0"
 description = "Python library for arbitrary-precision floating-point arithmetic"
@@ -2195,6 +2214,27 @@ numpy = ">=1.19.5,<1.27.0"
 dev = ["click", "doit (>=0.36.0)", "flake8", "mypy", "pycodestyle", "pydevtool", "rich-click", "typing_extensions"]
 doc = ["matplotlib (>2)", "numpydoc", "pydata-sphinx-theme (==0.9.0)", "sphinx (!=4.1.0)", "sphinx-design (>=0.2.0)"]
 test = ["asv", "gmpy2", "mpmath", "pooch", "pytest", "pytest-cov", "pytest-timeout", "pytest-xdist", "scikit-umfpack", "threadpoolctl"]
+
+[[package]]
+name = "seaborn"
+version = "0.13.2"
+description = "Statistical data visualization"
+optional = false
+python-versions = ">=3.8"
+files = [
+    {file = "seaborn-0.13.2-py3-none-any.whl", hash = "sha256:636f8336facf092165e27924f223d3c62ca560b1f2bb5dff7ab7fad265361987"},
+    {file = "seaborn-0.13.2.tar.gz", hash = "sha256:93e60a40988f4d65e9f4885df477e2fdaff6b73a9ded434c1ab356dd57eefff7"},
+]
+
+[package.dependencies]
+matplotlib = ">=3.4,<3.6.1 || >3.6.1"
+numpy = ">=1.20,<1.24.0 || >1.24.0"
+pandas = ">=1.2"
+
+[package.extras]
+dev = ["flake8", "flit", "mypy", "pandas-stubs", "pre-commit", "pytest", "pytest-cov", "pytest-xdist"]
+docs = ["ipykernel", "nbconvert", "numpydoc", "pydata_sphinx_theme (==0.10.0rc2)", "pyyaml", "sphinx (<6.0.0)", "sphinx-copybutton", "sphinx-design", "sphinx-issues"]
+stats = ["scipy (>=1.7)", "statsmodels (>=0.12)"]
 
 [[package]]
 name = "setuptools"
@@ -2924,4 +2964,4 @@ testing = ["coverage (>=5.0.3)", "zope.event", "zope.testing"]
 [metadata]
 lock-version = "2.0"
 python-versions = ">=3.8,<3.11"
-content-hash = "2e45408fc95b4962f0acb04b67b8036473e23e4fffcedd95bcbf6ddf063f42b4"
+content-hash = "1aa421b3d172f1d6180a1916445f6f3f19326b8cbf6e1af73487638809455af0"
